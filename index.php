@@ -21,10 +21,23 @@ try {
   $printer->text("Poli Tujuan : Klinik jantung dan Pembuluh darah\n");
   $printer->text("Tanggal masuk : 22 September 2021\n");
   $printer->text("tanggal Terakhir masuk\n");
+  $printer->text("tanggal Terakhir masuk\n");
+  $printer->text("tanggal Terakhir masuk\n");
+  $printer->text("tanggal Terakhir masuk\n");
+  $printer->text("tanggal Terakhir masuk\n");
+  $printer->text("tanggal Terakhir masuk\n");
+  $printer->text("tanggal Terakhir masuk\n");
+  $printer->text("tanggal Terakhir masuk\n");
   $printer->text("\n");
   $printer->text("\n");
   $printer->text("\n");
-  $printer->text("Ah\n");
+  $printer->text("\n");
+  $printer->text("\n");
+  $printer->text("\n");
+  $printer->text("tanggal Terakhir masuk\n");
+  $printer->text("tanggal Terakhir masuk\n");
+  $printer->text("tanggal Terakhir masuk\n");
+  $printer->text("tanggal Terakhir masuk\n");
   $printer->feed(10);
   // $printer->cut();
 
