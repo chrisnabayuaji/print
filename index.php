@@ -6,12 +6,12 @@ use Mike42\Escpos\Printer;
 use Mike42\Escpos\PrintConnectors\CupsPrintConnector;
 
 try {
-  $connector = new CupsPrintConnector("print_tracer");
+  $connector = new CupsPrintConnector("localhost/printers/print_tracer");
 
   /* Print a "Hello world" receipt" */
   $printer = new Printer($connector);
   $printer->text("Hello World!\n");
-  $printer->cut();
+  // $printer->cut();
 
   /* Close printer */
   $printer->close();
