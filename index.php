@@ -6,7 +6,7 @@ use Mike42\Escpos\Printer;
 use Mike42\Escpos\PrintConnectors\CupsPrintConnector;
 
 try {
-  $connector = new CupsPrintConnector("localhost/printers/print_tracer");
+  $connector = new CupsPrintConnector("print_tracer");
 
   /* Print a "Hello world" receipt" */
   $printer = new Printer($connector);
