@@ -23,7 +23,7 @@ try {
   $printer->text("Poli Tujuan : Klinik jantung dan Pembuluh darah");
   $printer->text("Tanggal masuk : 22 September 2021");
   $printer->text("tanggal Terakhir masuk");
-  $printer->feedReverse(10);
+  $printer->feed(10);
   // $printer->cut();
 
   /* Close printer */
