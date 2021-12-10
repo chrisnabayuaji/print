@@ -40,6 +40,7 @@ try {
   $printer->text("tanggal Terakhir masuk\n");
   $printer->text("tanggal Terakhir masuk\n");
   $printer->text("Printed at " . date('d M Y H:i:s') . "\n");
+  $printer->text("\n");
   $printer->feed(10);
   // $printer->cut();
 
