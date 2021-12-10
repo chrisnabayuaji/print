@@ -1,13 +1,20 @@
 <?php
-/* Call this file 'hello-world.php' */
-require __DIR__ . '/vendor/autoload.php';
+/* Change to the correct path if you copy this example! */
+require __DIR__ . '/../../autoload.php';
 
-use Mike42\Escpos\PrintConnectors\WindowsPrintConnector;
 use Mike42\Escpos\Printer;
+use Mike42\Escpos\PrintConnectors\CupsPrintConnector;
 
-// $connector = new FilePrintConnector("php://stdout");
-$connector = new WindowsPrintConnector("192.168.1.113/epson\ lq-310\ escp2");
-$printer = new Printer($connector);
-$printer->text("Hello World!\n");
-$printer->cut();
-$printer->close();
+try {
+  $connector = new CupsPrintConnector("print_tracer");
+
+  /* Print a "Hello world" receipt" */
+  $printer = new Printer($connector);
+  $printer->text("Hello World!\n");
+  $printer->cut();
+
+  /* Close printer */
+  $printer->close();
+} catch (Exception $e) {
+  echo "Couldn't print to this printer: " . $e->getMessage() . "\n";
+}
