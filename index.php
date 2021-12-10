@@ -10,19 +10,19 @@ try {
 
   /* Print a "Hello world" receipt" */
   $printer = new Printer($connector);
-  $printer->text("2109220197              PendBPJS Printer 22 Sep 2021");
-  $printer->text("----------------------------------------------------");
-  $printer->text("FILE REKAM MEDIS");
-  $printer->text("----------------------------------------------------");
-  $printer->text("Jenis Pasien : BPJS");
-  $printer->text("Status Pasien : Lama");
-  $printer->text("No. RM : 088521");
-  $printer->text("Nama Pasien : Sri Sulanjari");
-  $printer->text("Alamat : Kemabaran 01/02");
-  $printer->text("Alamat : Kebumen");
-  $printer->text("Poli Tujuan : Klinik jantung dan Pembuluh darah");
-  $printer->text("Tanggal masuk : 22 September 2021");
-  $printer->text("tanggal Terakhir masuk");
+  $printer->text("2109220197              PendBPJS Printer 22 Sep 2021\n");
+  $printer->text("----------------------------------------------------\n");
+  $printer->text("FILE REKAM MEDIS\n");
+  $printer->text("----------------------------------------------------\n");
+  $printer->text("Jenis Pasien : BPJS\n");
+  $printer->text("Status Pasien : Lama\n");
+  $printer->text("No. RM : 088521\n");
+  $printer->text("Nama Pasien : Sri Sulanjari\n");
+  $printer->text("Alamat : Kemabaran 01/02\n");
+  $printer->text("Alamat : Kebumen\n");
+  $printer->text("Poli Tujuan : Klinik jantung dan Pembuluh darah\n");
+  $printer->text("Tanggal masuk : 22 September 2021\n");
+  $printer->text("tanggal Terakhir masuk\n");
   $printer->feed(10);
   // $printer->cut();
 
